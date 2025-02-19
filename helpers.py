@@ -2,6 +2,7 @@ import os
 import time
 import re
 
+
 def wait_for_download_file(target_filename):
     download_dir = os.getcwd()
     while True:
@@ -19,7 +20,7 @@ def get_file_size_and_delete(filename):
     os.remove(file_path)
     return float(round(file_size_mb, 2))
 
+
 def get_size(text):
     match = re.search(r'(\d+\.\d+)', text)
     return float(match.group(1))
-

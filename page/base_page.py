@@ -30,11 +30,6 @@ class BasePage:
     def switch_to_window(self):
         self.driver.switch_to.window(self.driver.window_handles[-1])
 
-    def scroll_to_element(self, locator):
-        element = self.driver.find_element(*locator)
-        self.driver.execute_script("arguments[0].scrollIntoView();", element)
-        WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(locator))
-
     def get_url(self):
         current_url = self.driver.current_url
         return current_url
