@@ -1,0 +1,5 @@
+home_region = 'Краснодарский край'
+Kamchtka = 'Камчатский край'
+Url_contains_region = '41-kamchatskij-kraj'
+download_file_name = 'sbisplugin-setup-web.exe'
+main_page_URL = 'https://saby.ru/'
